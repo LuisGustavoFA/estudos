@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversor Binário</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            transition: background-color 0.5s ease;
+        }
+        #inputText, #outputText {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.5s ease;
+        }
+        button {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #darkModeToggle {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .dark-mode {
+            background-color: #333;
+            color: white;
+        }
+        .dark-mode button {
+            background-color: #555;
+        }
+        .dark-mode button:hover {
+            background-color: #777;
+        }
+        .dark-mode #inputText, .dark-mode #outputText {
+            border-color: white;
+        }
+    </style>
+</head>
+<body>
+    <button id="darkModeToggle" onclick="toggleDarkMode()">Modo Escuro</button>
+    <h1>Conversor Binário</h1>
+    <p>Insira o texto ou código binário abaixo:</p>
+    <textarea id="inputText"></textarea><br>
+    <button onclick="convert()">Converter</button><br>
+    <p>Resultado:</p>
+    <textarea id="outputText" readonly></textarea><br>
+    <button onclick="generateRandomPhrase()">Gerar Frase Aleatória</button>
+
+    <script>
+        var phrases = [
+            "A vida é como uma caixa de chocolates, você nunca sabe o que vai encontrar.",
+            "Não deixe para amanhã o que você pode fazer hoje.",
+            "O importante não é vencer, mas competir com dignidade.",
+            "A persistência é o caminho do êxito.",
+            "O sucesso normalmente vem para quem está ocupado demais para procurar por ele."
+        ];
+        
+        function convert() {
+            var inputText = document.getElementById("inputText").value;
+            var outputText = "";
+            
+            if (inputText.match(/^[01\s]+$/)) {
+                // Convert binary to text
+                var binaryArray = inputText.split(" ");
+                for (var i = 0; i < binaryArray.length; i++) {
+                    outputText += String.fromCharCode(parseInt(binaryArray[i], 2));
+                }
+            } else {
+                // Convert text to binary
+                for (var i = 0; i < inputText.length; i++) {
+                    outputText += inputText[i].charCodeAt(0).toString(2) + " ";
+                }
+            }
+            
+            document.getElementById("outputText").value = outputText;
+        }
+        
+        function generateRandomPhrase() {
+            var randomIndex = Math.floor(Math.random() * phrases.length);
+            var randomPhrase = phrases[randomIndex];
+            document.getElementById("inputText").value = randomPhrase;
+        }
+        
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
