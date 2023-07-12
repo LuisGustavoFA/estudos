@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teste</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<script>
+
+  function linha() {
+    document.write("<br>");
+  }
+
+  function escreve(texto) {
+    document.write(texto);
+    linha();
+  }
+
+  var peso = prompt("Qual seu peso?");
+  var altura = prompt("Qual sua altura?");
+  var imc = peso / (altura * altura);
+
+  escreve("Seu IMC é " + imc + ".");
+
+  if (imc < 18.5) {
+    escreve("Seu IMC está abaixo do recomendado.");
+  }
+  
+  if (imc > 35) {
+    escreve("Seu IMC está acima do recomendado.");
+  }
+  
+  if (imc >= 18.5 && imc <= 35) {
+      escreve ("Seu IMC está dentro do recomendado.");
+  }
+
+</script>

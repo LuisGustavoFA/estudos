@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teste</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<script>
+
+  function linha() {
+    document.write("<br>");
+  }
+
+  function escreve(texto) {
+    document.write(texto);
+    linha();
+  }
+
+  var ano = 2023;
+  var ddn = prompt("Em que ano você nasceu?");
+  var idade = ano - ddn;
+  
+  var anosFuturo = prompt("Em que ano você quer saber qual será sua idade?");
+  var anosFuturoSoma = anosFuturo - ano;
+  var idadeFuturo = idade + anosFuturoSoma; 
+
+  escreve("A sua idade é " + idade + ".");
+  escreve("Sua idade em " + anosFuturoSoma + " anos (" + anosFuturo + ") será " + idadeFuturo + ".")
+  
+
+</script>

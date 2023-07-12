@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teste</title>
+</head>
+<body>
+  <h1 id="resultado">0</h1>  
+  <button style="position: absolute; bottom: 20px;" onclick="rodar()">começar = C</button>
+  <button style="position: absolute; bottom: 20px; left: 105px;" onclick="reload()">reset = R</button>
+</body>
+</html>
+
+<script>
+
+  function linha(x) {
+    for (i = 0; i < x; i++) {
+      document.write("<br>");
+    }
+  }
+
+  function escreve(texto) {
+    document.getElementById("resultado").innerHTML = texto
+  }
+
+  function perguntaNum(num) {
+    return parseInt(prompt(num));
+  }
+
+  function numAleatorio() {
+    return Math.round(Math.random()*10);
+  }
+
+  function reload() {
+    location.reload();
+  }
+
+  function soma(x, y) {
+    return x + y;
+  } 
+
+  function subtrai(x, y) {
+    return x - y;
+  }
+
+  function multiplica(x, y) {
+    return x * y;
+  }
+
+  function divide(x, y) {
+    return x / y;
+  }
+
+  document.addEventListener("keydown", tecla =>{
+    if(tecla.key == "c"){
+        rodar();
+    }
+  }) 
+
+  document.addEventListener("keydown", tecla =>{
+    if(tecla.key == "r"){
+        reload();
+    }
+  }) 
+
+  function rodar() {
+
+    var operacao = prompt("Que operação matemática deseja realizar?")
+
+    if (operacao == "soma" || operacao == "mais") {
+        var primeiroNumero = perguntaNum("Digite o primeiro número");
+        var segundoNumero = perguntaNum("Digite o segundo número");
+        escreve(soma(primeiroNumero, segundoNumero));
+    }
+
+    else if (operacao == "subtração" || operacao == "menos") {
+        var primeiroNumero = perguntaNum("Digite o primeiro número");
+        var segundoNumero = perguntaNum("Digite o segundo número");
+        escreve(subtrai(primeiroNumero, segundoNumero));
+    }
+
+    else if (operacao == "multiplicação" || operacao == "multi") {
+        var primeiroNumero = perguntaNum("Digite o primeiro número");
+        var segundoNumero = perguntaNum("Digite o segundo número");
+        escreve(multiplica(primeiroNumero, segundoNumero));
+    }
+
+    else if (operacao == "divisão" || operacao == "div") {
+        var primeiroNumero = perguntaNum("Digite o primeiro número");
+        var segundoNumero = perguntaNum("Digite o segundo número");
+        escreve(divide(primeiroNumero, segundoNumero));
+    }
+
+    else {
+        alert('Por favor, escolha uma das seguintes operações: "soma", "subtração", "multiplicação" ou "divisão". ');
+        reload();
+    }
+  }
+  
+
+
+</script>

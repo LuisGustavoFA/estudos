@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teste</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<script>
+
+  function linha() {
+    document.write("<br>");
+  }
+
+  function escreve(texto) {
+    document.write(texto);
+    linha();
+  }
+
+  function perguntaNum(num) {
+    return parseInt(prompt(num));
+  }
+
+  var totalFamiliares = perguntaNum("Quantos na familia?");
+  var totalIdades = 0;
+
+  for (var i = 0; i < totalFamiliares; i++) {
+    var idades = perguntaNum("Qual as idades?");
+    totalIdades = totalIdades + idades;
+  }
+
+  escreve("O total das idades é " + totalIdades + ".");
+  escreve("A média das idades é " + (totalIdades / totalFamiliares) + ".");
+
+</script>

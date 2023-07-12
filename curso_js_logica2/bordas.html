@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programa</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<canvas width="600px" height="400px"></canvas>
+
+<script>
+  const tela = document.querySelector('canvas');
+  const pincel = tela.getContext('2d');
+
+  function pintarRetangulo (cor, xi, yi, xf, yf) {
+    pincel.fillStyle = cor;
+    pincel.fillRect(xi, yi, xf, yf);
+  }
+
+  function pintarBordaRetangular (cor, xi, yi, xf, yf) {
+    pincel.strokeStyle = cor;
+    pincel.strokeRect(xi, yi, xf, yf);
+  }
+
+  function pintarRetanguloComBorda (corR, xi, yi, xf, yf, corB) {
+    pincel.fillStyle = corR;
+    pincel.fillRect(xi, yi, xf, yf);
+    pincel.strokeStyle = corB;
+    pincel.strokeRect(xi, yi, xf, yf);
+  }
+
+  for(x=0;x<600;x+=50) {
+    for(y=0;y<400;y+=50) {
+      pintarRetanguloComBorda('green', x, y, 50, 50, 'black');  
+    }
+  }  
+</script>

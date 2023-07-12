@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teste</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<script>
+
+  function linha() {
+    document.write("<br>");
+  }
+
+  function escreve(texto) {
+    document.write(texto);
+    linha();
+  }
+
+  var anoCopa = 1930;
+  var limite = parseInt(prompt("Data limite?"));
+  var anoAtual = 2023;
+
+  while (anoCopa <= limite) {
+    
+    if (anoCopa <= anoAtual) {
+      escreve("Teve copa em " + anoCopa + ".");
+      anoCopa = anoCopa + 4;
+    } else {
+      escreve("Terá copa em " + anoCopa + ".");
+      anoCopa = anoCopa + 4;
+    }
+    
+  }
+
+  escreve("fim");
+
+</script>

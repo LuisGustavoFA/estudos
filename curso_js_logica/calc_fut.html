@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teste</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<script>
+
+  function linha() {
+    document.write("<br>");
+  }
+
+  function escreve(texto) {
+    document.write(texto);
+    linha();
+  }
+
+  var vitorias = parseInt(prompt("Quantas vitórias?"));
+  var empates = parseInt(prompt("Quantos empates?"));
+  var derrotas = parseInt(prompt("Quantas derrotas?"));
+  var pontosAntes = parseInt(prompt("Quantos pontos seu time fez anteriormente?"));
+  var pontos = (vitorias * 3) + empates - derrotas;
+
+  escreve("Seu time fez " + pontos + " pontos.");
+
+  if (pontos < pontosAntes) {
+    escreve("Seu time piorou! Ele obteve " + (pontosAntes - pontos) + " menos pontos do que antes.");
+  }
+
+  if (pontos > pontosAntes) {
+    escreve("Seu time melhorou! Ele obteve " + (pontos - pontosAntes) + " mais pontos do que antes.");
+  }
+
+  if (pontos == pontosAntes) {
+    escreve("Seu time obeteve a mesma pontuação de anteriormente.");
+  }
+
+</script>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teste</title>
+</head>
+<body>
+  <input type="number" placeholder="Digite um número"/>
+  <button onclick="rodar()">Comparar</button>
+</body>
+</html>
+
+<script>
+
+  function linha(x) {
+    for (i = 0; i < x; i++) {
+      document.write("<br>");
+    }
+  }
+
+  function escreve(texto) {
+    document.write(texto);
+    linha();
+  }
+
+  function perguntaNum(num) {
+    return parseInt(prompt(num));
+  }
+
+  function numAleatorio() {
+    return Math.round(Math.random()*10);
+  }
+
+  document.addEventListener("keydown", tecla =>{
+    if(tecla.key == "Enter" || tecla.key == " "){
+        rodar();
+    }
+  }) 
+
+  var input = document.querySelector("input");
+  input.focus();
+
+  var numerosCorretos = [];
+
+  for (i = 0; i < 3; i++) {
+    var sorteio = numAleatorio();
+    var repetido = false;
+
+    if (numerosCorretos.includes(sorteio)) {
+      repetido = true;
+      i--;
+    } 
+
+    if (repetido == false) {
+      numerosCorretos.push(sorteio);
+    }
+
+  }
+  console.log(numerosCorretos);
+  
+  function rodar() {
+    var achou = false;
+    for (i = 0; i < numerosCorretos.length; i++) {
+      if (input.value == numerosCorretos[i]) {
+        alert("Acertou!");
+        achou = true;
+        location.reload();
+      } 
+    }
+
+    if (achou == false) {
+      alert("Errou!");  
+    }
+
+    input.value = "";
+    input.focus();
+  }
+
+</script>

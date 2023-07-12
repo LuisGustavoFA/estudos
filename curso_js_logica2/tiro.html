@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programa</title>
+</head>
+<body>
+  <canvas width="600" height="400"></canvas>  
+  <span id="tiros" style="font-size: xx-large;">0</span>
+</body>
+</html>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    var pontuacao = document.getElementById("tiros");
+    var imagem = new Image();
+    imagem.src="https://freepngimg.com/save/6883-bullet-shot-hole-png-image/784x678";
+    tela.style.cursor = 'crosshair';
+
+    pincel.fillStyle = 'white';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function pintarTexto(texto, cor, x , y) {
+    pincel.font='15px Georgia';
+    pincel.fillStyle = cor;
+    pincel.fillText(texto, x, y);
+    }
+
+    function pintarBordaRetangular (cor, xi, yi, xf, yf) {
+    pincel.strokeStyle = cor;
+    pincel.strokeRect(xi, yi, xf, yf);
+    }
+
+    pintarBordaRetangular('black', 0, 0, 600, 400);
+
+    function exibeAlerta(alerta) {
+      alert(alerta);
+    }
+
+    function posicionaImagem(x, y) {
+      pincel.drawImage(imagem, x, y, 40, 40)
+    }
+
+    tela.addEventListener('click', (evento) => {
+      const x = evento.clientX - tela.offsetTop;
+      const y = evento.clientY - tela.offsetLeft;
+      pintarTexto('POW!', 'black', x-20, y+30)
+      posicionaImagem(x-20, y-20);
+      console.log(x, y);
+      pontuacao.innerText = parseInt(pontuacao.innerText) + 1;
+    })
+</script>
+

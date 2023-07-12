@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programa</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<canvas width="600px" height="400px"></canvas>
+
+<script>
+  const tela = document.querySelector('canvas');
+  const pincel = tela.getContext('2d');
+
+  function pintarRetangulo (cor, xi, yi, xf, yf) {
+    pincel.fillStyle = cor;
+    pincel.fillRect(xi, yi, xf, yf);
+  }
+
+  function pintarBordaRetangular (cor, xi, yi, xf, yf) {
+    pincel.strokeStyle = cor;
+    pincel.strokeRect(xi, yi, xf, yf);
+  }
+
+  function pintarRetanguloComBorda (corR, xi, yi, xf, yf, corB) {
+    pincel.fillStyle = corR;
+    pincel.fillRect(xi, yi, xf, yf);
+    pincel.strokeStyle = corB;
+    pincel.strokeRect(xi, yi, xf, yf);
+  }
+
+  function pintarTexto(texto, x , y) {
+    pincel.font='20px Georgia';
+    pincel.fillStyle='black';
+    pincel.fillText(texto, x, y);    
+}
+
+pintarTexto('Qual é a fração?', 50, 40)
+pintarRetanguloComBorda('green', 50, 50, 100, 100, 'black');
+pintarRetanguloComBorda('green', 150, 50, 100, 100, 'black');
+pintarRetanguloComBorda('green', 250, 50, 100, 100, 'black');
+pintarBordaRetangular('black', 350, 50, 100, 100);
+
+</script>
