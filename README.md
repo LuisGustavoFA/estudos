@@ -14,3 +14,5 @@ Projetos dos cursos realizados na Alura.
 <a href="https://github.com/LuisGustavoFA/estudos/tree/main/mochila-de-viagem">JavaScript na Web: armazenando dados no navegador</a>
 <br>
 <a href="https://github.com/LuisGustavoFA/estudos/tree/main/curso_js_logica2">JavaScript e HTML: pratique lógica com desenhos, animações e um jogo</a>
+<br>
+<a href="https://github.com/LuisGustavoFA/estudos/tree/main/java">Java JRE e JDK: compile e execute o seu programa</a>
