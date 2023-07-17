@@ -18,3 +18,5 @@ Projetos dos cursos realizados na Alura.
 <a href="https://github.com/LuisGustavoFA/estudos/tree/main/java">Java JRE e JDK: compile e execute o seu programa</a>
 <br>
 <a href="https://github.com/LuisGustavoFA/estudos/tree/main/java/bytebank">Java OO: entendendo a Orientação a Objetos</a>
+<br>
+<a href="https://github.com/LuisGustavoFA/estudos/tree/main/java/bytebank_herdado">Java Polimorfismo: entenda herança e interfaces</a>
