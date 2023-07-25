@@ -59,3 +59,6 @@ Projetos dos cursos realizados na Alura.
 <h4>Cursos feitos separadamente</h3>
 <a href="https://cursos.alura.com.br/user/luis-gustavo-freitas-a/course/logica-programacao-pratica-com-desenho-animacoes-em-jogo/certificate">JavaScript e HTML: pratique lógica com desenhos, animações e um jogo</a>
 <br>
+<a href="https://cursos.alura.com.br/user/luis-gustavo-freitas-a/course/java-criando-primeira-aplicacao/certificate">Java: criando a sua primeira aplicação</a>
+<br>
+<a href="https://cursos.alura.com.br/user/luis-gustavo-freitas-a/course/java-aplicando-orientacao-objetos/certificate">Java: aplicando a orientação a objetos</a>
