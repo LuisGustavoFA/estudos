@@ -1,28 +1,28 @@
 # Instituto Caldeira - Alura
-Projetos dos cursos realizados na Alura.
+Projetos dos cursos realizados na Alura e na DIO.me.
 
-<a href="https://github.com/LuisGustavoFA/estudos/tree/main/curso_css">Cursos HTML e CSS</a>
+<a href="https://github.com/LuisGustavoFA/estudos/tree/main/alura/curso_css">Cursos HTML e CSS</a>
 <br>
-<a href="https://github.com/LuisGustavoFA/estudos/tree/main/curso_js_logica">JavaScript e HTML: desenvolva um jogo e pratique lógica de programação</a>
+<a href="https://github.com/LuisGustavoFA/estudos/tree/main/alura/curso_js_logica">JavaScript e HTML: desenvolva um jogo e pratique lógica de programação</a>
 <br>
-<a href="https://github.com/LuisGustavoFA/estudos/tree/main/curso_js_array">JavaScript: Arrays</a>
+<a href="https://github.com/LuisGustavoFA/estudos/tree/main/alura/curso_js_array">JavaScript: Arrays</a>
 <br>
-<a href="https://github.com/LuisGustavoFA/estudos/tree/main/curso_js_objetos">JavaScript: Objetos</a>
+<a href="https://github.com/LuisGustavoFA/estudos/tree/main/alura/curso_js_objetos">JavaScript: Objetos</a>
 <br>
-<a href="https://github.com/LuisGustavoFA/estudos/tree/main/robotron2000">Manipulando o DOM</a>
+<a href="https://github.com/LuisGustavoFA/estudos/tree/main/alura/robotron2000">Manipulando o DOM</a>
 <br>
-<a href="https://github.com/LuisGustavoFA/estudos/tree/main/mochila-de-viagem">JavaScript na Web: armazenando dados no navegador</a>
+<a href="https://github.com/LuisGustavoFA/estudos/tree/main/alura/mochila-de-viagem">JavaScript na Web: armazenando dados no navegador</a>
 <br>
-<a href="https://github.com/LuisGustavoFA/estudos/tree/main/curso_js_logica2">JavaScript e HTML: pratique lógica com desenhos, animações e um jogo</a>
+<a href="https://github.com/LuisGustavoFA/estudos/tree/main/alura/curso_js_logica2">JavaScript e HTML: pratique lógica com desenhos, animações e um jogo</a>
 <br>
-<a href="https://github.com/LuisGustavoFA/estudos/tree/main/java">Java JRE e JDK: compile e execute o seu programa</a>
+<a href="https://github.com/LuisGustavoFA/estudos/tree/main/alura/java">Java JRE e JDK: compile e execute o seu programa</a>
 <br>
-<a href="https://github.com/LuisGustavoFA/estudos/tree/main/java/bytebank">Java OO: entendendo a Orientação a Objetos</a>
+<a href="https://github.com/LuisGustavoFA/estudos/tree/main/alura/java/bytebank">Java OO: entendendo a Orientação a Objetos</a>
 <br>
-<a href="https://github.com/LuisGustavoFA/estudos/tree/main/java/bytebank_herdado">Java Polimorfismo: entenda herança e interfaces</a>
+<a href="https://github.com/LuisGustavoFA/estudos/tree/main/alura/java/bytebank_herdado">Java Polimorfismo: entenda herança e interfaces</a>
 
 # Instituto Caldeira - Java Caldeira
-<a href="https://github.com/LuisGustavoFA/estudos/tree/main/java_caldeira/aula01">Aula 01</a>
+<a href="https://github.com/LuisGustavoFA/estudos/tree/main/alura/java_caldeira/aula01">Aula 01</a>
 <br>
 
 
