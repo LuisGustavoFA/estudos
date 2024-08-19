@@ -1,6 +1,6 @@
 package collections.list;
 
-public class Item {
+public class Item implements Comparable<Item> {
     private String nome;
     private double preco;
     private int quantidade;
@@ -38,5 +38,10 @@ public class Item {
     @Override
     public String toString() {
         return "Nome: " + nome + ", Preço: " + preco + ", Qtd: " + quantidade;
+    }
+
+    @Override
+    public int compareTo(Item i) {
+        return Double.compare(this.preco, i.getPreco());
     }
 }
