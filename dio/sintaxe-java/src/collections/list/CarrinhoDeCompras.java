@@ -32,12 +32,8 @@ public class CarrinhoDeCompras {
         return total;
     }
 
-    public String exibirItens() {
-        String ret = "";
-        for (Item it : listaDeCompras) {
-            ret = ret.concat(" // " + it.toString() + " // ");
-        }
-        return ret;
+    public List<Item> exibirItens() {
+        return listaDeCompras;
     }
 
     public static void main(String[] args) {
